@@ -1,9 +1,10 @@
 import "./App.scss";
 import axios from "axios";
+// import defaultMountain from "./assets/images/tommhoie.jpg";
 
 import React, { useState, useEffect } from "react";
-import Nav from "./Components/Nav/Nav.jsx/index.js";
-
+import Nav from "./Components/Nav/Nav.jsx";
+import Header from "./Components/Header/Header.jsx";
 function App() {
   const [hikeData, setHikeData] = useState([]);
   const [currentHike, setCurrentHike] = useState(null);
@@ -34,19 +35,23 @@ function App() {
     <>
       <Nav />
       <Header />
-      <div className="hikeSelector">
-        {currentHike && (
-          <li className="hikeSelector__hike">
-            <li className="hikeSelector__image"></li>
-            <li>{currentHike.name}</li>
-            <li>{currentHike.city}</li>
-            <li>{currentHike.province}</li>
-            <li>{currentHike.distance}</li>
-            <li>{currentHike.elevation}</li>
-          </li>
-        )}
+      <div className="appWrapper">
+        <div className="hikeSelector">
+          {currentHike && (
+            <li className="hikeSelector__hike">
+              <li className="hikeSelector__image">
+                {/* <img src={defaultMountain} alt="" /> */}
+              </li>
+              <li>{currentHike.name}</li>
+              <li>{currentHike.city}</li>
+              <li>{currentHike.province}</li>
+              <li>{currentHike.distance}</li>
+              <li>{currentHike.elevation}</li>
+            </li>
+          )}
+          <button onClick={selectRandomHike}>Select Random Hike</button>
+        </div>
       </div>
-      <button onClick={selectRandomHike}>Select Random Hike</button>
     </>
   );
 }

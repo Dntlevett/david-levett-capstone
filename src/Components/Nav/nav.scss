@@ -1,10 +1,26 @@
 .headerWrapper {
-  background-color: red;
+  background-color: #588157;
 }
 .headerContainer {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: space-between;
+  // align-items: baseline;
+  // font-family: "Avenir Next", sans-serif;
+  // font-weight: 900;
+  // font-size: 1.5rem;
+  // text-transform: uppercase;
+  // font-style: italic;
+  padding: 0.5rem 2rem;
+  &__logoContainer {
+    // height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logoImage {
+    height: 3rem;
+  }
+  letter-spacing: 0.05em;
   &__logoTitleContainer {
     display: flex;
 
@@ -19,6 +35,6 @@
     border: 1px white;
   }
   &__button2 {
-    background-color: white;
+    //  border
   }
 }
