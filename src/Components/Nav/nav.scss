@@ -3,22 +3,23 @@
 }
 .headerContainer {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   // align-items: baseline;
   // font-family: "Avenir Next", sans-serif;
   // font-weight: 900;
   // font-size: 1.5rem;
   // text-transform: uppercase;
   // font-style: italic;
-  padding: 0.5rem 2rem;
+  // padding: 0.5rem 2rem;
   &__logoContainer {
     // height: 2rem;
     display: flex;
-    justify-content: center;
+    // justify-content: space-around;
     align-items: center;
   }
   &__logoImage {
-    height: 3rem;
+    height: 2rem;
+    width: 4rem;
   }
   letter-spacing: 0.05em;
   &__logoTitleContainer {

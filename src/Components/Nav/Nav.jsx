@@ -27,6 +27,7 @@ function nav() {
             <p className="headerContainer__button1">Hikes</p>
             {/* <button class="btn-menu">Menu</button> */}
           </div>
+          <div className="headerContainer__menu"></div>
         </div>
       </div>
     </>

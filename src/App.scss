@@ -16,16 +16,34 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
     // padding: 1rem;
   }
   &__image {
-    background-color: #dad7cd;
-    border-radius: 6%;
-    width: 17rem;
-    height: 10rem;
+    // background-color: #dad7cd;
+    // border-radius: 6%;
+    // width: 17rem;
+    // height: 10rem;
 
     align-self: center;
     // display: flex;
     // justify-content: center;
   }
+  &__button {
+    all: unset;
+    background-color: #588157;
+    box-shadow: 3px 3px #dad7cd, -0.2em 0 0.4rem olive;
+    height: 3rem;
+    // border-radius: 6%;
+    color: #dad7cd;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 1rem;
+  }
+}
+img {
+  width: 15rem;
+  border-radius: 6%;
 }

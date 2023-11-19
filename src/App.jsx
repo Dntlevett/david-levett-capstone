@@ -1,6 +1,6 @@
 import "./App.scss";
 import axios from "axios";
-// import defaultMountain from "./assets/images/tommhoie.jpg";
+import mountain from "./assets/images/tommhoi.jpg";
 
 import React, { useState, useEffect } from "react";
 import Nav from "./Components/Nav/Nav.jsx";
@@ -38,18 +38,20 @@ function App() {
       <div className="appWrapper">
         <div className="hikeSelector">
           {currentHike && (
-            <li className="hikeSelector__hike">
+            <ul className="hikeSelector__hike">
               <li className="hikeSelector__image">
-                {/* <img src={defaultMountain} alt="" /> */}
+                <img src={mountain} alt="test" />
               </li>
               <li>{currentHike.name}</li>
               <li>{currentHike.city}</li>
               <li>{currentHike.province}</li>
-              <li>{currentHike.distance}</li>
-              <li>{currentHike.elevation}</li>
-            </li>
+              <li>Total distance: {currentHike.distance}</li>
+              <li> Elevation: {currentHike.elevation}</li>
+            </ul>
           )}
-          <button onClick={selectRandomHike}>Select Random Hike</button>
+          <button className="hikeSelector__button" onClick={selectRandomHike}>
+            Select Random Hike
+          </button>
         </div>
       </div>
     </>
