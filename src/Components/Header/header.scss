@@ -1,0 +1,16 @@
+.headerWrapper {
+  background-color: red;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-around;
+  &__logoTitleContainer {
+    display: flex;
+    // justify-content: space-between;
+  }
+  &__buttonContainer {
+    display: flex;
+    // justify-content: space-between;
+    align-items: right;
+  }
+}
