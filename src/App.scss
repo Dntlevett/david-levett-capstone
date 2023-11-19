@@ -1,0 +1,10 @@
+.hikeSelector {
+  display: flex;
+
+  &__hike {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
