@@ -5,6 +5,10 @@
   margin: auto 1rem;
   // background-color: #dad7cd;
 }
+.navVectorContainer {
+  display: flex;
+  flex-direction: column;
+}
 
 .hikeSelector {
   display: flex;
@@ -34,7 +38,7 @@
   &__button {
     all: unset;
     background-color: #588157;
-    box-shadow: 3px 3px #dad7cd, -0.2em 0 0.4rem olive;
+    box-shadow: 3px 3px red, -1em 0 0.4rem;
     height: 3rem;
     // border-radius: 6%;
     color: #dad7cd;

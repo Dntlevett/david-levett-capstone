@@ -1,10 +1,11 @@
 import "./App.scss";
 import axios from "axios";
-import mountain from "./assets/images/tommhoi.jpg";
+import mountain from "./assets/images/tommhoi.jpeg";
 
 import React, { useState, useEffect } from "react";
 import Nav from "./Components/Nav/Nav.jsx";
 import Header from "./Components/Header/Header.jsx";
+import VectorMenu from "./Components/VectorMenu/VectorMenu.jsx";
 function App() {
   const [hikeData, setHikeData] = useState([]);
   const [currentHike, setCurrentHike] = useState(null);
@@ -33,7 +34,11 @@ function App() {
   };
   return (
     <>
-      <Nav />
+      <div className="navVectorContainer">
+        <Nav />
+        <VectorMenu />
+      </div>
+
       <Header />
       <div className="appWrapper">
         <div className="hikeSelector">

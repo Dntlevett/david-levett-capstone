@@ -1,0 +1,12 @@
+.vectorMenuContainer {
+  text-align: right;
+}
+.menuContainer {
+  display: flex;
+  margin: auto;
+}
+.menu {
+  display: flex;
+  border: 1px dashed red;
+  flex-direction: row;
+}
