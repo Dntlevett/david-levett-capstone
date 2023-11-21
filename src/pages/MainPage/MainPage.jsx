@@ -44,7 +44,11 @@ function MainPage() {
           {currentHike && (
             <ul className="hikeSelector__hike">
               <li className="hikeSelector__image">
-                <img src={mountain} alt="test" />
+                <img
+                  src={`http://localhost:8081/${currentHike.imagePath}`}
+                ></img>
+
+                {/* <img src={mountain} alt="test" /> */}
               </li>
               <li>{currentHike.name}</li>
               <li>{currentHike.city}</li>
