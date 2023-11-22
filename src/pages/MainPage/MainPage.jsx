@@ -5,6 +5,8 @@ import axios from "axios";
 import "../../App.scss";
 import mountain from "../../assets/images/tommhoi.jpeg";
 import React, { useState, useEffect } from "react";
+import GrouseGrind from "../../Components/GrouseGrind/GrouseGrind";
+
 function MainPage() {
   const [hikeData, setHikeData] = useState([]);
   const [currentHike, setCurrentHike] = useState(null);
@@ -12,7 +14,11 @@ function MainPage() {
   useEffect(() => {
     const getHikeData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8081/hikes`);
+        // const response = await axios.get(`http://localhost:8081/hikes`);
+        const response = await axios.get(
+          `${process.env.REACT_APP_API_URL}/hikes`
+        );
+
         setHikeData(response.data);
         const randomIndex = Math.floor(Math.random() * response.data.length);
         setCurrentHike({
@@ -62,6 +68,7 @@ function MainPage() {
           </button>
         </div>
       </div>
+      <GrouseGrind />
     </>
   );
 }

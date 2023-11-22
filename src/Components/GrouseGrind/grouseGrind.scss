@@ -1,0 +1,15 @@
+.grouseGrindForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  &__firstName,
+  &__lastName {
+    width: 50%;
+    margin: auto 25%;
+  }
+  &__easyButton,
+  &__mediumButton,
+  &__hardButton {
+    height: 10rem;
+  }
+}
