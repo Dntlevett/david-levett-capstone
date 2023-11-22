@@ -37,9 +37,12 @@
   }
   &__button {
     all: unset;
-    background-color: #588157;
+    background-color: #a3b18a;
     // box-shadow: 3px 3px black, -1em 0 0.4rem;
     box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
+    // box-shadow: rgba(46, 240, 82, 0.4) 5px 5px, rgba(73, 74, 72, 0.3) 10px 10px,
+    //   rgba(34, 42, 12, 0.2) 15px 15px, rgba(46, 240, 69, 0.1) 20px 20px,
+    //   rgba(156, 197, 93, 0.05) 25px 25px;
     height: 3rem;
     // border-radius: 6%;
     color: white;
