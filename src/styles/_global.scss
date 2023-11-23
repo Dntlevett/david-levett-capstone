@@ -1,0 +1,31 @@
+$primary-color: #a3b18a;
+// $primary-color-blue: #0095ff;
+// $primary-color-sil: #afafaf;
+// $primary-color-wht: #ffffff;
+
+// $secondary-color-drkblk: #000000;
+// $secondary-color-drkblue: #0065ad;
+// $secondary-color-sil: #e1e1e1;
+// $secondary-color-wht: #fafafa;
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+// @font-face {
+//   font-family: "Avenir";
+//   src: (url("../assets/Font/AvenirNextLTPro-Regular.otf"));
+//   font-weight: 400;
+// }
+
+// @font-face {
+//   font-family: "Avenir";
+//   src: (url("../assets/Font/AvenirNextLTPro-Bold.otf"));
+//   font-weight: 700;

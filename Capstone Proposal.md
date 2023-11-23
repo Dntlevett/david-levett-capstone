@@ -24,6 +24,8 @@ List the functionality that your app will include. These can be written as user 
 
     My app will make use of the strava api for data regarding local hikes. This data will include hike distance in km, hike elevation gain in km and estimated time to complete. Users selection will be stored and compared to new users to find matches.
 
+    Updated to use real data sourced online using mySQL as strava api wasn't quite enough to complete the project. Updated to now select a random hike when a button is pressed and also can take in user name and store to database. User can input name and select a grouse grind time which will provide a difficulty rating to mySQL and match that to some hikes in their difficulty range.
+
 ## Implementation
 
 ### Tech Stack

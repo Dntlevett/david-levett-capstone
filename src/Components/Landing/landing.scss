@@ -1,19 +1,44 @@
+@use "../../styles/global" as *;
 .landingPageWrapper {
   background-color: red;
-  background-image: "../../assets/images/tommhoie.jpeg";
-  height: 50rem;
-  //   background-image: "../../assets/icons/images/tommhoi.jpeg";
-  //   height: 100%;
-  //   width: 10rem;
-  //   &__backgroundImage {
-  //     height: 100vw;
+  // background-image: "../../assets/images/tommhoie.jpeg";
+  background: url("../../assets/images/brunswick-mount.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100rem;
+  // font-family: url("../../assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+  &__titleBox {
+    display: flex;
+  }
+  &__title {
+    margin: 3rem auto;
+    font-size: 4rem;
+    padding-left: 1rem;
+    font-family: url("../../assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+  }
+  &__leadInfoContainer {
+    width: 15rem;
+    padding-left: 1rem;
+  }
+  &__leadInfo {
+    font-size: 2rem;
+  }
+  &__buttonContainer {
+    background-color: black;
+    color: white;
+    height: 4rem;
+    width: 9rem;
+    border-radius: 1rem;
+    margin-left: 9rem;
+    margin-top: 17rem;
+  }
+  &__button {
+    // background-color: $primary-color;
+    // height: 3rem;
+    // width: 9rem;
+    // border-radius: 1rem;
+    // padding: 1rem;
+    padding: 1rem;
+  }
 }
-// }
-// .image {
-//   background-image: "../../assets/icons/images/tommhoi.jpeg";
-
-//   //   width: 10rem;
-//   backgroundposition: "center";
-//   backgroundsize: "cover";
-//   backgroundrepeat: "no-repeat";
-// }

@@ -1,13 +1,24 @@
 import "./landing.scss";
-import mountain from "../../assets/images/tommhoi.jpeg";
+// import mountain from "../../assets/images/tommhoi.jpeg";
 
 function Landing() {
   return (
     <>
       <div className="landingPageWrapper">
-        <h1>GO HIKING</h1>
+        <div className="landingPageWrapper__titleBox">
+          <h1 className="landingPageWrapper__title">Summit Selector</h1>
+        </div>
+        <div className="landingPageWrapper__leadInfoContainer">
+          <p className="landingPageWrapper__leadInfo">
+            Ready for your next adventure?
+          </p>
+        </div>
+        <div className="landingPageWrapper__buttonContainer">
+          <h2 className="landingPageWrapper__button">Welcome</h2>
+        </div>
         {/* <p className="landingPageWrapper"></p> */}
-        <section className="image"></section>
+        {/* <img className="landingImage" src="" alt="tommhoi" /> */}
+        {/* <section className="image"></section> */}
       </div>
     </>
   );
