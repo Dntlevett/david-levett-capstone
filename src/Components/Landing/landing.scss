@@ -1,8 +1,9 @@
 @use "../../styles/global" as *;
 .landingPageWrapper {
   background-color: red;
-  // background-image: "../../assets/images/tommhoie.jpeg";
-  background: url("../../assets/images/brunswick-mount.jpg");
+  background-image: url("../../assets/images//spencers-peak.jpg");
+  // background: url("http://localhost:8080/images/tommhoi.jpeg");
+  // background: url("http://localhost:8081/images/spencers-peak.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,5 +41,10 @@
     // border-radius: 1rem;
     // padding: 1rem;
     padding: 1rem;
+    // text-decoration: none;
+    color: white;
   }
+}
+a {
+  text-decoration: none;
 }

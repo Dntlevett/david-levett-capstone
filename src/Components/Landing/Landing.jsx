@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./landing.scss";
 // import mountain from "../../assets/images/tommhoi.jpeg";
 
@@ -14,7 +15,9 @@ function Landing() {
           </p>
         </div>
         <div className="landingPageWrapper__buttonContainer">
-          <h2 className="landingPageWrapper__button">Welcome</h2>
+          <Link to="/main">
+            <h2 className="landingPageWrapper__button">Welcome</h2>
+          </Link>
         </div>
         {/* <p className="landingPageWrapper"></p> */}
         {/* <img className="landingImage" src="" alt="tommhoi" /> */}

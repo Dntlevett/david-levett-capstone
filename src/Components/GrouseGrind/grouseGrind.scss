@@ -1,3 +1,4 @@
+@use "../../styles/global" as *;
 .grouseGrindForm {
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@
     margin-top: 3rem;
     // width: 10rem;
     // margin: auto 20%;
-    background-color: #a3b18a;
+    background-color: $primary-color;
     box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
     // border-radius: 5%;
     // padding-top: 1rem;

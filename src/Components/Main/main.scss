@@ -1,3 +1,4 @@
+@use "../../styles/global" as *;
 .hikeSelector {
   display: flex;
   text-align: center;
@@ -28,7 +29,7 @@
   }
   &__button {
     all: unset;
-    background-color: #a3b18a;
+    background-color: $primary-color;
     // box-shadow: 3px 3px black, -1em 0 0.4rem;
     box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
     // box-shadow: rgba(46, 240, 82, 0.4) 5px 5px, rgba(73, 74, 72, 0.3) 10px 10px,

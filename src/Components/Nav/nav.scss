@@ -1,5 +1,6 @@
+@use "../../styles/global" as *;
 .headerWrapper {
-  background-color: #a3b18a;
+  background-color: $primary-color;
 }
 .headerContainer {
   display: flex;
