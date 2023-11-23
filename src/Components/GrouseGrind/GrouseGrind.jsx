@@ -73,19 +73,19 @@ function GrouseGrind() {
         <h1>Grouse Grind</h1>
         <p>Enter Your first name, last name and click your grouse grind time</p>
         <form onSubmit={handleFormSubmit} className="grouseGrindForm">
-          <div>
-            <input
-              value={firstName}
-              onChange={handleFirstNameChange}
-              className="grouseGrindForm__firstName"
-              placeholder="Enter First Name"
-            ></input>
-            <input
-              value={lastName}
-              onChange={handleLastNameChange}
-              className="grouseGrindForm__lastName"
-              placeholder="Enter Last Name"
-            ></input>
+          <input
+            value={firstName}
+            onChange={handleFirstNameChange}
+            className="grouseGrindForm__firstName"
+            placeholder="Enter First Name"
+          ></input>
+          <input
+            value={lastName}
+            onChange={handleLastNameChange}
+            className="grouseGrindForm__lastName"
+            placeholder="Enter Last Name"
+          ></input>
+          <div className="grouseGrindForm__buttonBox">
             <button
               // use this below instead of having multiple click grouse grind buttons in order to submit the form and deliver grouse time as well
               // onClick={() => handleClickEasy(2)}

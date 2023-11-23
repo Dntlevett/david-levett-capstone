@@ -16,12 +16,14 @@ function VectorMenu() {
         MENU
       </button>
       <div className="menuContainer">
-        {isOpen && <div className="menu1">Hikes</div>}
-        <Link to="/reviews">
+        {/* {isOpen && <div className="menu1">Hikes</div>} */}
+        {/* <Link to="/reviews">
           {isOpen && <div className="menu2">Reviews</div>}
+        </Link> */}
+        <Link to="/main">{isOpen && <div className="menu3">Random</div>}</Link>
+        <Link to="/grind">
+          {isOpen && <div className="menu4">Grouse Grind</div>}
         </Link>
-        {isOpen && <div className="menu3">Random</div>}
-        {isOpen && <div className="menu4">Grouse Grind</div>}
       </div>
     </>
   );

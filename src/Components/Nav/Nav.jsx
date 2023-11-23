@@ -1,5 +1,6 @@
 import "./nav.scss";
 import icon from "../../assets/icons/trekking.svg";
+import { Link } from "react-router-dom";
 
 // const trigger = document.querySelector(".btn-menu");
 // // const nav = document.querySelector('.full-screen-nav');
@@ -15,11 +16,13 @@ function nav() {
         <div className="headerContainer">
           <div className="headerContainer__logoTitleContainer">
             <div className="headerContainer__logoContainer">
-              <img
-                className="headerContainer__logoImage"
-                src={icon}
-                alt="test"
-              />
+              <Link to="/">
+                <img
+                  className="headerContainer__logoImage"
+                  src={icon}
+                  alt="test"
+                />
+              </Link>
             </div>
             {/* <p className="headerContainer__titleContainer">2</p> */}
           </div>

@@ -1,7 +1,7 @@
 @use "../../styles/global" as *;
 .landingPageWrapper {
-  background-color: red;
-  background-image: url("../../assets/images//spencers-peak.jpg");
+  background-color: $primary-color;
+  // background-image: url("../../assets/images/deeks-lake.jpeg");
   // background: url("http://localhost:8080/images/tommhoi.jpeg");
   // background: url("http://localhost:8081/images/spencers-peak.jpeg");
   background-position: center;

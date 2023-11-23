@@ -1,0 +1,14 @@
+@use "../../styles/global" as *;
+
+.footer {
+  //   height: 100px;
+}
+.footerHeaderContainer {
+  background-color: $primary-color;
+  // box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
+}
+.footerHeader {
+  color: white;
+  margin-top: 22.2rem;
+  padding: 0.5rem;
+}

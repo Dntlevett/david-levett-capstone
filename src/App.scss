@@ -1,5 +1,8 @@
-* {
-  // font-family: Georgia, "Times New Roman", Times, serif;
+@use "./styles/global" as *;
+
+.app {
+  font-family: "Montserrat";
+  font-weight: 400;
 }
 .appWrapper {
   margin: auto 1rem;

@@ -19,7 +19,13 @@
     // margin: auto 20%;
     background-color: $primary-color;
     box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
+    border-radius: 3rem;
     // border-radius: 5%;
     // padding-top: 1rem;
+  }
+  &__buttonBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
