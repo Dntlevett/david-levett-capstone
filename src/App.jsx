@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage/LandingPage.jsx";
 import MainPage from "./pages/MainPage/MainPage.jsx";
 // import ReviewsPage from "./pages/ReviewsPage/ReviewsPage.jsx";
 import GrouseGrindPage from "./pages/GrouseGrindPage/GrouseGrindPage.jsx";
+import AllHikesPage from "./Components/AllHikes/AllHikes.jsx";
 function App() {
   return (
     <div className="app">
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/grind" element={<GrouseGrindPage />} />
+          <Route path="/hikes" element={<AllHikesPage />} />
           {/* <Route path="/reviews" element={<ReviewsPage />}></Route> */}
         </Routes>
       </BrowserRouter>

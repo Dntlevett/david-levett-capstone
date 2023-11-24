@@ -1,6 +1,9 @@
 @use "../../styles/global" as *;
 .headerWrapper {
   background-color: $primary-color;
+  display: flex;
+  // justify-content: space-around;
+  justify-content: space-between;
 }
 .headerContainer {
   display: flex;
@@ -33,12 +36,23 @@
     // justify-content: space-between;
     align-items: right;
   }
-  &__button1 {
-    border: 1px white;
-  }
-  &__button2 {
-    //  border
-  }
-  &__menu {
-  }
+  // &__button1 {
+  //   border: 1px white;
+  // }
+  // &__button2 {
+  //   //  border
+  // }
+  // &__menu {
+  // }
+}
+.test {
+  width: 30px;
+  height: 5px;
+  background-color: orange;
+  margin: 6px 0;
+}
+.testContainer {
+  height: 2rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
 }

@@ -1,29 +1,38 @@
 @use "../../styles/global" as *;
 .landingPageWrapper {
   background-color: $primary-color;
-  // background-image: url("../../assets/images/deeks-lake.jpeg");
-  // background: url("http://localhost:8080/images/tommhoi.jpeg");
-  // background: url("http://localhost:8081/images/spencers-peak.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100rem;
-  // font-family: url("../../assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+
   &__titleBox {
     display: flex;
   }
   &__title {
-    margin: 3rem auto;
+    // margin: 3rem auto;
     font-size: 4rem;
-    padding-left: 1rem;
+    // padding-left: 1rem;
     font-family: url("../../assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
   }
   &__leadInfoContainer {
-    width: 15rem;
+    // width: 15rem;
     padding-left: 1rem;
+    background: url("http://localhost:8081/images/brunswick-mount.jpeg");
+    // background: url("http://localhost:8081/images/spencers-peak.jpeg");
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2% 80%;
+    border-radius: 5rem 5rem 0 0;
+    height: 40rem;
+    // box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
+    // margin-top: 10rem;
+    filter: grayscale(0%);
+    &:hover {
+      filter: grayscale(100%);
+    }
   }
   &__leadInfo {
     font-size: 2rem;
+    padding-top: 8rem;
+    font-weight: 600;
   }
   &__buttonContainer {
     background-color: black;
@@ -31,8 +40,9 @@
     height: 4rem;
     width: 9rem;
     border-radius: 1rem;
-    margin-left: 9rem;
-    margin-top: 17rem;
+    z-index: 100%;
+    // margin-left: 9rem;
+    // margin-top: 17rem;
   }
   &__button {
     // background-color: $primary-color;

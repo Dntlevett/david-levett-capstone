@@ -6,9 +6,32 @@
 .footerHeaderContainer {
   background-color: $primary-color;
   // box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
+  // border-radius: 3rem;
 }
 .footerHeader {
-  color: white;
-  margin-top: 22.2rem;
-  padding: 0.5rem;
+  // color: white;
+  // margin-top: 8rem;
+  // padding: 1rem;
+
+  &__text {
+    // padding: 1rem 1rem 1rem 1rem;
+  }
+  &__textBox {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    height: 13%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-size: 0.7rem;
+    // border: 3px solid black;
+  }
 }

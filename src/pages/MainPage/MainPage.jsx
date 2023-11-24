@@ -14,7 +14,7 @@ function MainPage() {
     <>
       <div className="navVectorContainer">
         <Nav />
-        <VectorMenu />
+        {/* <VectorMenu /> */}
       </div>
 
       <Header />
