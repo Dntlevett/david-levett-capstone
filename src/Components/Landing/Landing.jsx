@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./landing.scss";
+import check from "../../assets/icons/running.svg";
 
 function Landing() {
   return (
@@ -14,7 +15,14 @@ function Landing() {
           </p>
           <div className="landingPageWrapper__buttonContainer">
             <Link to="/main">
-              <h2 className="landingPageWrapper__button">Welcome</h2>
+              <h2 className="landingPageWrapper__button">
+                Enter{" "}
+                <img
+                  className="landingPageWrapper__buttonIcon"
+                  src={check}
+                  alt="check mark icon"
+                />
+              </h2>
             </Link>
           </div>
         </div>

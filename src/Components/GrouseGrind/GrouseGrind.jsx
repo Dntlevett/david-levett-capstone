@@ -93,7 +93,7 @@ function GrouseGrind() {
               className="grouseGrindForm__easyButton"
             >
               {" "}
-              2hr{" "}
+              Less Than 2hr{" "}
             </button>
             <button
               onClick={handleClickMed}
@@ -110,10 +110,7 @@ function GrouseGrind() {
           </div>
         </form>
       </div>
-      <div>
-        {/* ...existing code... */}
-
-        {/* Display filtered hikes */}
+      <div className="hikesByDifficulty">
         {filteredHikes.map((hike) => (
           <div key={hike.id}>
             <h2>{hike.name}</h2>

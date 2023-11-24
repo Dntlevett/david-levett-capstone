@@ -7,10 +7,7 @@ import Footer from "../../Components/Footer/Footer";
 function GrouseGrindPage() {
   return (
     <>
-      <div className="navVectorContainer">
-        <Nav />
-        {/* <VectorMenu /> */}
-      </div>
+      <Nav />
       <Header />
       <GrouseGrind />
       <Footer />

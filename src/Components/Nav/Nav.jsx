@@ -3,13 +3,6 @@ import icon from "../../assets/icons/trekking.svg";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
-// const trigger = document.querySelector(".btn-menu");
-// // const nav = document.querySelector('.full-screen-nav');
-// // const backdrop = document.querySelector('.backdrop');
-
-// // trigger.addEventListener("click", () => nav.classList.add("btn-menu"));
-// // backdrop.addEventListener("click", () => nav.classList.remove("open-nav"));
-
 function Nav() {
   // // function to set state of menu.
   const [isOpen, setIsOpen] = useState(false);

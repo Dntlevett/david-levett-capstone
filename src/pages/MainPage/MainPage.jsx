@@ -12,11 +12,7 @@ import Footer from "../../Components/Footer/Footer";
 function MainPage() {
   return (
     <>
-      <div className="navVectorContainer">
-        <Nav />
-        {/* <VectorMenu /> */}
-      </div>
-
+      <Nav />
       <Header />
       <Main />
       <Footer />
