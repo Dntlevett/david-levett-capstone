@@ -1,8 +1,7 @@
 import "./nav.scss";
 import icon from "../../assets/icons/trekking.svg";
-import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 // const trigger = document.querySelector(".btn-menu");
 // // const nav = document.querySelector('.full-screen-nav');
@@ -12,10 +11,17 @@ import { Link } from "react-router-dom";
 // // backdrop.addEventListener("click", () => nav.classList.remove("open-nav"));
 
 function Nav() {
+  // // function to set state of menu.
   const [isOpen, setIsOpen] = useState(false);
+  const [change, setChange] = useState(false);
+
+  const clickVector = () => {
+    setChange(!change);
+  };
 
   function menuClick() {
     setIsOpen(!isOpen);
+    setChange(!change);
     console.log("You clicked submit");
   }
   return (
@@ -40,11 +46,23 @@ function Nav() {
           </div>
           <div className="headerContainer__menu"></div>
         </div>
-        <div onClick={menuClick} className="testContainer">
-          <div className="test"></div>
-          <div className="test"></div>
-          <div className="test"></div>
+        <div
+          onClick={menuClick}
+          className={`testContainer ${change ? "change" : ""}`}
+        >
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
         </div>
+      </div>
+      <div className="menuContainer">
+        <Link to="/main">
+          {" "}
+          {isOpen && <div className="menu3">Select for me</div>}
+        </Link>
+        <Link to="/grind">
+          {isOpen && <div className="menu4">Grouse Grind Time</div>}
+        </Link>
       </div>
     </>
   );

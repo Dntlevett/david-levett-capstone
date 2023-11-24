@@ -9,7 +9,7 @@ function GrouseGrindPage() {
     <>
       <div className="navVectorContainer">
         <Nav />
-        <VectorMenu />
+        {/* <VectorMenu /> */}
       </div>
       <Header />
       <GrouseGrind />
