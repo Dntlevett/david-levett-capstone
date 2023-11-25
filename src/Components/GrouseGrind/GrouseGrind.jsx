@@ -1,6 +1,7 @@
 import "./grouseGrind.scss";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import elevationIcon from "../../assets/icons/stat-up.svg";
 
 function GrouseGrind() {
   // set states to collect data for grouse grind time and first name,last name
@@ -70,21 +71,33 @@ function GrouseGrind() {
   return (
     <>
       <div className="grouseGrindFormContainer">
-        <h1>Grouse Grind</h1>
-        <p>Enter Your first name, last name and click your grouse grind time</p>
+        <h1 className="grouseGrindForm__title">
+          Grouse Grind Time Hike Selector{" "}
+          <img
+            className="grouseGrindForm__elevationIcon"
+            src={elevationIcon}
+            alt="icon"
+          />
+        </h1>
+        <p className="grouseGrindForm__introText">
+          Enter Your first name, last name and click your grouse grind time
+        </p>
+
         <form onSubmit={handleFormSubmit} className="grouseGrindForm">
-          <input
-            value={firstName}
-            onChange={handleFirstNameChange}
-            className="grouseGrindForm__firstName"
-            placeholder="Enter First Name"
-          ></input>
-          <input
-            value={lastName}
-            onChange={handleLastNameChange}
-            className="grouseGrindForm__lastName"
-            placeholder="Enter Last Name"
-          ></input>
+          <div className="grouseGrindForm__inputBox">
+            <input
+              value={firstName}
+              onChange={handleFirstNameChange}
+              className="grouseGrindForm__firstName"
+              placeholder="Enter First Name"
+            ></input>
+            <input
+              value={lastName}
+              onChange={handleLastNameChange}
+              className="grouseGrindForm__lastName"
+              placeholder="Enter Last Name"
+            ></input>
+          </div>
           <div className="grouseGrindForm__buttonBox">
             <button
               // use this below instead of having multiple click grouse grind buttons in order to submit the form and deliver grouse time as well
@@ -99,22 +112,27 @@ function GrouseGrind() {
               onClick={handleClickMed}
               className="grouseGrindForm__mediumButton"
             >
-              1.5hr
+              Less than 1.5hr
             </button>
             <button
               onClick={handleClickHard}
               className="grouseGrindForm__hardButton"
             >
-              1hr
+              Less than 1hr
             </button>
           </div>
         </form>
       </div>
       <div className="hikesByDifficulty">
-        {filteredHikes.map((hike) => (
+        {filteredHikes.slice(0, 3).map((hike) => (
           <div key={hike.id}>
             <h2>{hike.name}</h2>
-            <p>{hike.description}</p>
+            {/* <p>{hike.imagePath}</p> */}
+            <img
+              className="hikesByDifficulty__hikeImage"
+              src={`http://localhost:8081/${hike.imagePath}`}
+              alt="test"
+            />
           </div>
         ))}
       </div>

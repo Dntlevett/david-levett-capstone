@@ -8,7 +8,7 @@ function GrouseGrindPage() {
   return (
     <>
       <Nav />
-      <Header />
+      {/* <Header /> */}
       <GrouseGrind />
       <Footer />
     </>

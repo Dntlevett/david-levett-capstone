@@ -37,9 +37,9 @@
   &__buttonContainer {
     // background-color: black;
     color: black;
-    height: 4rem;
-    width: 7rem;
-    border-radius: 1rem;
+    height: 4.5rem;
+    width: 8rem;
+    border-radius: 3rem;
     // z-index: 100%;
     // margin-left: 9rem;
     // margin-top: 17rem;
@@ -48,6 +48,7 @@
     // background-color: $secondary-color;
     // align-items: baseline;
     border: 0.2rem solid $secondary-color;
+    box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
     justify-content: space-evenly;
     align-items: baseline;
     &:hover {

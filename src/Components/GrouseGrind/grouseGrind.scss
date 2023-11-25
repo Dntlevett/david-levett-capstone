@@ -1,13 +1,40 @@
 @use "../../styles/global" as *;
+
 .grouseGrindForm {
   display: flex;
   flex-direction: column;
-
-  margin-top: 1rem;
+  // margin-top: 1rem;
+  // justify-content: space-around;
+  &__title {
+    display: flex;
+    // gap: 1rem;
+    // align-items: baseline;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  &__elevationIcon {
+    height: 1.5rem;
+  }
+  &__introText {
+    font-size: 0.8rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+  &__inputBox {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+  }
   &__firstName,
   &__lastName {
-    width: 50%;
-    margin: auto 25%;
+    width: 35%;
+    padding: 0.4rem;
+    height: 1.5rem;
+    border-radius: 3rem;
+    font-size: 0.8rem;
+
+    // margin: auto 25%;
+    // margin: 1rem 0.5rem 0.5rem;
   }
   &__easyButton,
   &__mediumButton,
@@ -19,16 +46,23 @@
     background-color: $primary-color;
     box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
     border-radius: 3rem;
-    margin-left: 7rem;
+    // margin-left: 4rem;
     // box-shadow: 0.3rem 0.3rem 0.3rem #0000006e;
   }
   &__buttonBox {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    // align-items: baseline;
+    // justify-content: center;
+    margin: auto 50%;
+    align-items: center;
   }
 }
 .hikesByDifficulty {
   padding-left: 3rem;
   padding-top: 1rem;
+  &__hikeImage {
+    height: 10rem;
+  }
 }
