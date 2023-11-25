@@ -80,7 +80,8 @@ function GrouseGrind() {
           />
         </h1>
         <p className="grouseGrindForm__introText">
-          Enter Your first name, last name and click your grouse grind time
+          Enter your info and select your GrouseGrind time to have hikes at your
+          skill level reccomended.
         </p>
 
         <form onSubmit={handleFormSubmit} className="grouseGrindForm">
@@ -124,10 +125,10 @@ function GrouseGrind() {
         </form>
       </div>
       <div className="hikesByDifficulty">
-        {filteredHikes.slice(0, 3).map((hike) => (
-          <div key={hike.id}>
-            <h2>{hike.name}</h2>
-            {/* <p>{hike.imagePath}</p> */}
+        {filteredHikes.slice(0, 2).map((hike) => (
+          <div className="hikesByDifficulty__hikeBox" key={hike.id}>
+            <h2 className="hikesByDifficulty__hikeName">{hike.name}</h2>
+            <p className="hikesByDifficulty__description">{hike.city}</p>
             <img
               className="hikesByDifficulty__hikeImage"
               src={`http://localhost:8081/${hike.imagePath}`}
