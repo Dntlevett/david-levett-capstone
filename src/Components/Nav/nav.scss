@@ -2,19 +2,19 @@
 .headerWrapper {
   background-color: $primary-color;
   display: flex;
-
   justify-content: space-between;
-  align-items: baseline;
+  // align-items: baseline;
+  padding-top: 0.5rem;
 }
 .headerContainer {
   display: flex;
-
   &__logoContainer {
     align-items: center;
   }
   &__logoImage {
-    height: 2rem;
+    height: 2.5rem;
     width: 4rem;
+    padding-top: 0.3rem;
   }
   letter-spacing: 0.05em;
   &__logoTitleContainer {
@@ -23,6 +23,9 @@
   &__buttonContainer {
     display: flex;
     align-items: right;
+  }
+  &__button1 {
+    font-weight: 600;
   }
 }
 .line1,
@@ -41,7 +44,6 @@
 .change .line2 {
   opacity: 0;
 }
-
 .change .line3 {
   transform: translate(0, -11px) rotate(45deg);
 }

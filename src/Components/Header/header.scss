@@ -1,17 +1,10 @@
-.headerTitleContainer {
-  // background-color: #dad7cd;
-}
 .headerTitle {
-  // position: relative;
-  // font-family: "Avenir Next", sans-serif;
-  // font-weight: 900;
-  // font-size: 2rem;
-  // text-transform: uppercase;
-  // font-style: italic;
   letter-spacing: 0.05em;
   display: inline-block;
   display: flex;
   font-size: 1.5rem;
+  padding-top: 1rem;
+  font-style: italic;
 
   justify-content: center;
 }

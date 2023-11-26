@@ -39,17 +39,29 @@ function Main() {
         <div className="hikeSelector">
           {currentHike && (
             <ul className="hikeSelector__hike">
+              <p className="hikeSelector__introText">
+                Press the button below to cycle through random hikes in the
+                Lower Mainland. Happy Hiking!{" "}
+              </p>
               <li>
                 <img
                   className="hikeSelector__image"
                   src={`http://localhost:8081/${currentHike.imagePath}`}
                 ></img>
               </li>
-              <li>{currentHike.name}</li>
-              <li>{currentHike.city}</li>
-              <li>{currentHike.province}</li>
-              <li>Total distance: {currentHike.distance}</li>
-              <li> Elevation: {currentHike.elevation}</li>
+
+              <li className="hikeSelector__hikeName">{currentHike.name}</li>
+              <div className="hikeSelector__detailsContainer">
+                <div>
+                  <li className="hikeSelector__hikeCity">{currentHike.city}</li>
+                  <li>{currentHike.province}</li>
+                </div>
+                <div>
+                  {" "}
+                  <li>Distance: {currentHike.distance}</li>
+                  <li> Elevation: {currentHike.elevation}</li>
+                </div>
+              </div>
             </ul>
           )}
           <button className="hikeSelector__button" onClick={selectRandomHike}>

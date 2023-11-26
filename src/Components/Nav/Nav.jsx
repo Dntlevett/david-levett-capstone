@@ -8,9 +8,9 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [change, setChange] = useState(false);
 
-  const clickVector = () => {
-    setChange(!change);
-  };
+  // const clickVector = () => {
+  //   setChange(!change);
+  // };
 
   function menuClick() {
     setIsOpen(!isOpen);
@@ -31,11 +31,9 @@ function Nav() {
                 />
               </Link>
             </div>
-            {/* <p className="headerContainer__titleContainer">2</p> */}
           </div>
           <div className="headerContainer__buttonContainer">
             <p className="headerContainer__button1">Summit Selector</p>
-            {/* <button class="btn-menu">Menu</button> */}
           </div>
           <div className="headerContainer__menu"></div>
         </div>
