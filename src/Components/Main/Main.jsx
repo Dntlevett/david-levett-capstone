@@ -44,8 +44,6 @@ function Main() {
                   className="hikeSelector__image"
                   src={`http://localhost:8081/${currentHike.imagePath}`}
                 ></img>
-
-                {/* <img src={mountain} alt="test" /> */}
               </li>
               <li>{currentHike.name}</li>
               <li>{currentHike.city}</li>

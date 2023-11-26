@@ -2,25 +2,14 @@
 .headerWrapper {
   background-color: $primary-color;
   display: flex;
-  // justify-content: space-around;
+
   justify-content: space-between;
   align-items: baseline;
-  // height: 2rem;
 }
 .headerContainer {
   display: flex;
-  // justify-content: space-between;
-  // align-items: baseline;
-  // font-family: "Avenir Next", sans-serif;
-  // font-weight: 900;
-  // font-size: 1.5rem;
-  // text-transform: uppercase;
-  // font-style: italic;
-  // padding: 0.5rem 2rem;
+
   &__logoContainer {
-    // height: 2rem;
-    display: flex;
-    // justify-content: space-around;
     align-items: center;
   }
   &__logoImage {
@@ -30,33 +19,18 @@
   letter-spacing: 0.05em;
   &__logoTitleContainer {
     display: flex;
-
-    // justify-content: space-between;
   }
   &__buttonContainer {
     display: flex;
-    // justify-content: space-between;
     align-items: right;
   }
-  // &__button1 {
-  //   border: 1px white;
-  // }
-  // &__button2 {
-  //   //  border
-  // }
-  // &__menu {
-  // }
 }
 .line1,
 .line2,
 .line3 {
-  // width: 30px;
-  // height: 3px;
-  // background-color: black;
-  // margin: 6px 0;
-  width: 35px;
+  width: 2.188rem;
   height: 5px;
-  background-color: #333;
+  background-color: $special;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -78,8 +52,6 @@
 }
 .menuContainer {
   display: flex;
-  // margin: auto;
-  // margin-top: 1rem;
   justify-content: space-around;
   padding-top: 1rem;
   background-color: $primary-color;
@@ -87,38 +59,19 @@
 }
 .menu {
   display: flex;
-  border: 1px dashed red;
   flex-direction: row;
 }
-.menu3 {
-  // margin-left: 1rem;
-  border: 1px solid $secondary-color;
-  box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
-  padding: 1rem;
-  border-radius: 3rem;
-  font-size: 0.8rem;
-  background-color: white;
-  color: black;
-  // margin-top: -1rem;
-  // height: 0.2rem;
-  &:hover {
-    background-color: $secondary-color;
-  }
-}
+.menu3,
 .menu4 {
-  // margin-right: 1rem;
-  border: 2px solid $secondary-color;
-  box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
-  background-color: white;
-  color: black;
-  &:hover {
-    background-color: $secondary-color;
-  }
-
-  // background-color: $primary-color;
+  border: 1px solid $secondary-color;
+  box-shadow: 0.3rem 0.3rem $primary-color-blk, 0.3rem 0.3rem;
   padding: 1rem;
   border-radius: 3rem;
   font-size: 0.8rem;
-  // margin-top: -1rem;
-  // height: 0.2rem;
+  font-weight: 600;
+  background-color: $primary-color-wht;
+  color: $primary-color-blk;
+  &:hover {
+    background-color: $secondary-color;
+  }
 }
