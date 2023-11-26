@@ -46,7 +46,7 @@ function Main() {
               <li>
                 <img
                   className="hikeSelector__image"
-                  src={`http://localhost:8081/${currentHike.imagePath}`}
+                  src={`${process.env.REACT_APP_API_URL}/${currentHike.imagePath}`}
                 ></img>
               </li>
 
@@ -58,8 +58,13 @@ function Main() {
                 </div>
                 <div>
                   {" "}
-                  <li>Distance: {currentHike.distance}</li>
-                  <li> Elevation: {currentHike.elevation}</li>
+                  <li className="hikeSelector__hikeDetail1">
+                    Distance: {currentHike.distance}
+                  </li>
+                  <li className="hikeSelector__hikeDetail2">
+                    {" "}
+                    Elevation: {currentHike.elevation}
+                  </li>
                 </div>
               </div>
             </ul>

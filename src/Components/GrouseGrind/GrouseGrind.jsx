@@ -131,7 +131,7 @@ function GrouseGrind() {
             <p className="hikesByDifficulty__description">{hike.city}</p>
             <img
               className="hikesByDifficulty__hikeImage"
-              src={`http://localhost:8081/${hike.imagePath}`}
+              src={`${process.env.REACT_APP_API_URL}/${hike.imagePath}`}
               alt="test"
             />
           </div>
