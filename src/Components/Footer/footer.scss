@@ -1,6 +1,6 @@
 @use "../../styles/global" as *;
 
-.footerHeaderContainer {
+.footerWrapper {
   background-color: $primary-color;
 }
 .footerHeader {
@@ -13,12 +13,20 @@
     color: $primary-color-wht;
     text-align: center;
     height: 10%;
-
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
     align-items: center;
     color: $primary-color;
     font-weight: 600;
     font-size: 0.7rem;
+  }
+  &__iconContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    height: 3rem;
+    padding: 0.4rem;
   }
 }

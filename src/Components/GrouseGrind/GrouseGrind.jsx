@@ -81,7 +81,7 @@ function GrouseGrind() {
         </h1>
         <p className="grouseGrindForm__introText">
           Enter your info and select your GrouseGrind time to have hikes at your
-          skill level reccomended.
+          skill level recommended.
         </p>
 
         <form onSubmit={handleFormSubmit} className="grouseGrindForm">
