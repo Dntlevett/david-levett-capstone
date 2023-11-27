@@ -15,6 +15,9 @@
     height: 10%;
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      justify-content: flex-end;
+    }
 
     align-items: center;
     color: $primary-color;
@@ -28,5 +31,21 @@
   &__icon {
     height: 2rem;
     padding: 0.4rem;
+    @include tablet {
+      height: 3rem;
+      order: 2;
+    }
   }
+  // &__iconBox2{
+  //   align-items: baseline;
+  // }
+  // &__mohan {
+  //   display: none;
+  //   @include tablet {
+  //     display: inline;
+  //     height: 2.5rem;
+  //     order: 0;
+  //     border-radius: 5rem;
+  //   }
+  // }
 }

@@ -4,7 +4,9 @@ import twitter from "../..//assets/icons/twitter-icon.svg";
 import fbook from "../../assets/icons/facebook-icon.svg";
 import insta from "../../assets/icons/insta.svg";
 import github from "../../assets/icons/github.svg";
+import mohan from "../../assets/images/Mohan-muruge.jpeg";
 import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <>
@@ -36,9 +38,11 @@ function Footer() {
                 src={github}
                 alt="github icon"
               />
+              {/* <img className="footerHeader__mohan" src={mohan} alt="mohan m" /> */}
             </Link>
           </div>
         </div>
+        {/* <img className="footerHeader__mohan" src={mohan} alt="mohan m" /> */}
       </div>
     </>
   );

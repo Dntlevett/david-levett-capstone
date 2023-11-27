@@ -32,20 +32,23 @@ List the functionality that your app will include. These can be written as user 
 
 List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
 
-    React
-    Node.JS
+    React.js
+    Node.js
     Javascript
     HTML5
     CSS3
     mySQL
     Express
     Sass
+    knex.js
+    Express
 
 ### APIs
 
 List any external sources of data that will be used in your app.
 
     Strava API (https://developers.strava.com/docs/reference)
+    mySQL database
 
 ### Sitemap
 
@@ -94,3 +97,12 @@ Your project will be marked based on what you committed to in the above document
     Users could have the ability to post a review on a given hike. Data would be stored in mySQL and read with FS.
     Users could have a profile that stores data about their hikes, experience and comments.
     Geolocation could be implemented to help show users hikes in the general proximity. (actual difficulty of this not yet known)
+
+## Next Steps
+
+User login and authentication, geolocation and fully resposive design. Interactivity through animations and click handlers. Additional hike data to add more options for potential hike routes.
+
+## Set up
+
+I set up both server and client in vs code and run npm start on client and npx nodemon server.js on the server side.
+Make sure to run npm i first on both sides as the node modules have been removed.

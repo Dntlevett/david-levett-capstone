@@ -24,22 +24,27 @@
     font-size: 2rem;
     padding-top: 8rem;
     font-weight: 600;
+    @include tablet {
+      margin: auto 30%;
+    }
   }
   &__buttonContainer {
     color: $primary-color-blk;
     height: 4.5rem;
     width: 8rem;
     border-radius: 3rem;
-
     display: flex;
     background-color: $primary-color-wht;
-
     border: 0.2rem solid $secondary-color;
     box-shadow: 0.3rem 0.3rem $primary-color-blk, 0.3rem 0.3rem;
     justify-content: space-evenly;
     align-items: baseline;
     &:hover {
       background-color: $secondary-color;
+    }
+    @include tablet {
+      margin: 4% 30%;
+      width: 15rem;
     }
   }
   &__button {
