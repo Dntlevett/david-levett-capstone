@@ -11,7 +11,10 @@
   }
   &__leadInfoContainer {
     padding-left: 1rem;
-    background: url("http://localhost:8081/images/brunswick-mount.jpeg");
+    background: url("https://david-levett-capstone-46a317a30e72.herokuapp.com//images/brunswick-mount.jpeg");
+
+    // {process.env.REACT_APP_API_URL}/images/brunswick-mount.jpeg
+    // `${process.env.REACT_APP_API_URL}/hikes`
     // background: url("https://david-levett-capstone-46a317a30e72.herokuapp.com/brunswick-mount.jpeg");
     // https://david-levett-capstone-46a317a30e72.herokuapp.com/
     background-repeat: no-repeat;
