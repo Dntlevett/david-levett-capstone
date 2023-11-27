@@ -2,7 +2,6 @@
 $primary-color: #a3b18a;
 $primary-color-blk: black;
 $primary-color-wht: white;
-
 $secondary-color: #faedcd;
 $special: #333;
 
@@ -16,7 +15,6 @@ $special: #333;
     @content;
   }
 }
-
 @font-face {
   font-family: "Montserrat";
   src: (url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf"));

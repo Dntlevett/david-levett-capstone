@@ -7,15 +7,10 @@ function Nav() {
   // // function to set state of menu.
   const [isOpen, setIsOpen] = useState(false);
   const [change, setChange] = useState(false);
-
-  // const clickVector = () => {
-  //   setChange(!change);
-  // };
-
+  // function to display menu on click
   function menuClick() {
     setIsOpen(!isOpen);
     setChange(!change);
-    console.log("You clicked submit");
   }
   return (
     <>
@@ -49,10 +44,10 @@ function Nav() {
       <div className="menuContainer">
         <Link to="/main">
           {" "}
-          {isOpen && <div className="menu3">Select for me</div>}
+          {isOpen && <div className="menu3">Hike Selector</div>}
         </Link>
         <Link to="/grind">
-          {isOpen && <div className="menu4">Grouse Grind Time</div>}
+          {isOpen && <div className="menu4">Grouse Grind Selector</div>}
         </Link>
       </div>
     </>

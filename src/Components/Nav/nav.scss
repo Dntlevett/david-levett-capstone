@@ -36,6 +36,7 @@
   background-color: $special;
   margin: 6px 0;
   transition: 0.4s;
+  cursor: pointer;
 }
 .change .line1 {
   transform: translate(0, 11px) rotate(-45deg);
@@ -75,5 +76,6 @@
   color: $primary-color-blk;
   &:hover {
     background-color: $secondary-color;
+    border: 1px solid $primary-color-blk;
   }
 }

@@ -1,16 +1,16 @@
 import "../Footer/footer.scss";
-import icon2 from "../../assets/icons/check.svg";
+
 import twitter from "../..//assets/icons/twitter-icon.svg";
 import fbook from "../../assets/icons/facebook-icon.svg";
 import insta from "../../assets/icons/insta.svg";
 import github from "../../assets/icons/github.svg";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
       <div className="footerWrapper">
         <div className="footerHeader__textBox">
           <div className="footerHeader__iconContainer">
-            {/* <img src={icon2} alt="icon2" /> */}
             <div>
               <img
                 className="footerHeader__icon"
@@ -30,11 +30,13 @@ function Footer() {
             </div>
           </div>
           <div className="footerHeader__iconBox2">
-            <img
-              className="footerHeader__icon"
-              src={github}
-              alt="github icon"
-            />
+            <Link to="https://github.com/Dntlevett">
+              <img
+                className="footerHeader__icon"
+                src={github}
+                alt="github icon"
+              />
+            </Link>
           </div>
         </div>
       </div>

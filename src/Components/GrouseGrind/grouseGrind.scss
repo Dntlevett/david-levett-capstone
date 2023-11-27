@@ -37,6 +37,11 @@
     height: 3rem;
     width: 10rem;
     margin-top: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondary-color;
+      border: 1px solid $primary-color-blk;
+    }
 
     background-color: $primary-color;
     box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
