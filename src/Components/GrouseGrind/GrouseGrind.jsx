@@ -101,8 +101,6 @@ function GrouseGrind() {
           </div>
           <div className="grouseGrindForm__buttonBox">
             <button
-              // use this below instead of having multiple click grouse grind buttons in order to submit the form and deliver grouse time as well
-              // onClick={() => handleClickEasy(2)}
               onClick={handleClickEasy}
               className="grouseGrindForm__easyButton"
             >
@@ -125,7 +123,7 @@ function GrouseGrind() {
         </form>
       </div>
       <div className="hikesByDifficulty">
-        {filteredHikes.slice(0, 2).map((hike) => (
+        {filteredHikes.slice(0, 1).map((hike) => (
           <div className="hikesByDifficulty__hikeBox" key={hike.id}>
             <h2 className="hikesByDifficulty__hikeName">{hike.name}</h2>
             <p className="hikesByDifficulty__description">{hike.city}</p>

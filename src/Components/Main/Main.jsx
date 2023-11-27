@@ -1,8 +1,6 @@
 import axios from "axios";
 import "../Main/main.scss";
-// import mountain from "../../assets/images/tommhoi.jpeg";
 import React, { useState, useEffect } from "react";
-// import GrouseGrind from "../../Components/GrouseGrind/GrouseGrind";
 
 function Main() {
   const [hikeData, setHikeData] = useState([]);
@@ -30,7 +28,6 @@ function Main() {
 
   const selectRandomHike = () => {
     const randomIndex = Math.floor(Math.random() * hikeData.length);
-    // setCurrentHike(hikeData[randomIndex]);
     setCurrentHike({ ...hikeData[randomIndex], number: randomIndex + 1 });
   };
   return (

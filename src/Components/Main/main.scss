@@ -14,35 +14,27 @@
     margin: 0;
   }
   &__introText {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   &__image {
     width: 18rem;
     border-radius: 6%;
     align-self: center;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
   &__detailsContainer {
     display: flex;
-    // padding-top: 2rem;
+
     font-size: 1rem;
     justify-content: space-between;
   }
   &__hikeName {
     font-weight: 600;
-    font-size: 1.7rem;
-    padding-top: 2rem;
+    font-size: 1.3rem;
+    padding-top: 0.2rem;
     margin-bottom: 2rem;
   }
-  // &__hikeCity{
-  //   display:flex;
-  // }
-  // &__hikeDetail1 {
-  //   padding-top: 0.5rem;
-  // }
-  // &__hikeDetail2 {
-  //   padding-top: 0.5rem;
-  // }
+
   &__button {
     all: unset;
     background-color: $primary-color;
@@ -51,7 +43,7 @@
     color: $primary-color-blk;
     font-size: 1.2rem;
     font-weight: 800;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 3rem;
   }
 }

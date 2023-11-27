@@ -6,15 +6,13 @@
     display: flex;
   }
   &__title {
-    // margin: 3rem auto;
     font-size: 4rem;
-
     font-family: url("../../assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
   }
   &__leadInfoContainer {
     padding-left: 1rem;
-    // background: url("http://localhost:8081/images/brunswick-mount.jpeg");
-    background: url("https://david-levett-capstone-46a317a30e72.herokuapp.com/brunswick-mount.jpeg");
+    background: url("http://localhost:8081/images/brunswick-mount.jpeg");
+    // background: url("https://david-levett-capstone-46a317a30e72.herokuapp.com/brunswick-mount.jpeg");
     // https://david-levett-capstone-46a317a30e72.herokuapp.com/
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,20 +26,16 @@
     font-weight: 600;
   }
   &__buttonContainer {
-    // background-color: black;
-    color: black;
+    color: $primary-color-blk;
     height: 4.5rem;
     width: 8rem;
     border-radius: 3rem;
-    // z-index: 100%;
-    // margin-left: 9rem;
-    // margin-top: 17rem;
+
     display: flex;
-    background-color: white;
-    // background-color: $secondary-color;
-    // align-items: baseline;
+    background-color: $primary-color-wht;
+
     border: 0.2rem solid $secondary-color;
-    box-shadow: 0.3rem 0.3rem black, 0.3rem 0.3rem;
+    box-shadow: 0.3rem 0.3rem $primary-color-blk, 0.3rem 0.3rem;
     justify-content: space-evenly;
     align-items: baseline;
     &:hover {
@@ -49,14 +43,7 @@
     }
   }
   &__button {
-    // background-color: $primary-color;
-    // height: 3rem;
-    // width: 9rem;
-    // border-radius: 1rem;
-    // padding: 1rem;
-    // padding: 1rem;
-    // text-decoration: none;
-    color: black;
+    color: $primary-color-blk;
     display: flex;
   }
   &__buttonIcon {
