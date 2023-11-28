@@ -1,4 +1,9 @@
 @use "../../styles/global" as *;
+.landingPageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .landingPageWrapper {
   background-color: $primary-color;
 
