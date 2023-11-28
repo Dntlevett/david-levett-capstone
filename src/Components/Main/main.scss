@@ -14,10 +14,11 @@
     margin: 0;
   }
   &__introText {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   &__image {
-    width: 18rem;
+    width: 20rem;
+    aspect-ratio: 3/2;
     border-radius: 6%;
     align-self: center;
     margin-top: 0.5rem;
@@ -32,7 +33,7 @@
     font-weight: 600;
     font-size: 1.3rem;
     padding-top: 0.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   &__button {
