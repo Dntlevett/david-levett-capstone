@@ -14,21 +14,27 @@ function Footer() {
         <div className="footerHeader__textBox">
           <div className="footerHeader__iconContainer">
             <div>
-              <img
-                className="footerHeader__icon"
-                src={fbook}
-                alt="facebook icon"
-              />
-              <img
-                className="footerHeader__icon"
-                src={twitter}
-                alt="twitter icon"
-              />
-              <img
-                className="footerHeader__icon"
-                src={insta}
-                alt="instagram icon"
-              />
+              <Link to="https://facebook.com">
+                <img
+                  className="footerHeader__icon"
+                  src={fbook}
+                  alt="facebook icon"
+                />
+              </Link>
+              <Link to="https://twitter.com">
+                <img
+                  className="footerHeader__icon"
+                  src={twitter}
+                  alt="twitter icon"
+                />
+              </Link>
+              <Link to="https://help.instagram.com">
+                <img
+                  className="footerHeader__icon"
+                  src={insta}
+                  alt="instagram icon"
+                />
+              </Link>
             </div>
           </div>
           <div className="footerHeader__iconBox2">

@@ -15,7 +15,7 @@
   }
   &__introText {
     font-size: 0.8rem;
-    padding: 1rem 1rem 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
   &__inputBox {
     display: flex;
@@ -37,6 +37,8 @@
     height: 3rem;
     width: 10rem;
     margin-top: 1rem;
+    color: $primary-color-blk;
+    border: 1px solid $primary-color-blk;
     cursor: pointer;
     &:hover {
       background-color: $secondary-color;
@@ -69,7 +71,7 @@
     font-size: 0.8rem;
   }
   &__hikeImage {
-    height: 9rem;
+    height: 10rem;
     border-radius: 6%;
   }
   &__description {
