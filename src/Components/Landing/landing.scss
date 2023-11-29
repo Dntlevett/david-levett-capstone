@@ -42,6 +42,10 @@
     box-shadow: 0.3rem 0.3rem $primary-color-blk, 0.3rem 0.3rem;
     justify-content: space-evenly;
     align-items: baseline;
+    &:active {
+      box-shadow: 0.1rem 0.1rem $primary-color-blk, 0.1rem 0.1rem;
+      transform: translate(0.24rem);
+    }
     &:hover {
       background-color: $secondary-color;
     }

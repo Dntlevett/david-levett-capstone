@@ -20,7 +20,7 @@
     font-size: 0.9rem;
   }
   &__image {
-    width: 22rem;
+    width: 18rem;
     aspect-ratio: 3/2;
     border-radius: 6%;
     align-self: center;
@@ -58,6 +58,10 @@
     &:hover {
       background-color: $secondary-color;
       border: 1px solid $primary-color-blk;
+    }
+    &:active {
+      box-shadow: 0.1rem 0.1rem $primary-color-blk, 0.1rem 0.1rem;
+      transform: translate(0.24rem);
     }
   }
 }
