@@ -10,24 +10,32 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    list-style-type: none;
     margin: 0;
+    // @include tablet {
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    // }
   }
   &__introText {
     font-size: 0.9rem;
   }
   &__image {
-    width: 20rem;
+    width: 22rem;
     aspect-ratio: 3/2;
     border-radius: 6%;
     align-self: center;
     margin-top: 0.5rem;
+    @include tablet {
+      width: 40rem;
+    }
   }
   &__detailsContainer {
     display: flex;
-
     font-size: 1rem;
     justify-content: space-between;
+    // @include tablet {
+    //   flex-direction: column;
+    // }
   }
   &__hikeName {
     font-weight: 600;

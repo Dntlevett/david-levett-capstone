@@ -17,11 +17,6 @@
   &__leadInfoContainer {
     padding-left: 1rem;
     background: url("https://david-levett-capstone-46a317a30e72.herokuapp.com//images/brunswick-mount.jpeg");
-
-    // {process.env.REACT_APP_API_URL}/images/brunswick-mount.jpeg
-    // `${process.env.REACT_APP_API_URL}/hikes`
-    // background: url("https://david-levett-capstone-46a317a30e72.herokuapp.com/brunswick-mount.jpeg");
-    // https://david-levett-capstone-46a317a30e72.herokuapp.com/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 2% 80%;
@@ -51,16 +46,23 @@
       background-color: $secondary-color;
     }
     @include tablet {
-      margin: 4% 30%;
-      width: 15rem;
+      margin: 4% 28%;
+      width: 22rem;
+      height: 5.5rem;
     }
   }
   &__button {
     color: $primary-color-blk;
     display: flex;
+    @include tablet {
+      font-size: 2rem;
+    }
   }
   &__buttonIcon {
     height: 2rem;
+    @include tablet {
+      height: 3rem;
+    }
   }
 }
 a {
