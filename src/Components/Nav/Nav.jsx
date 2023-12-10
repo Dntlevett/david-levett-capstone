@@ -42,12 +42,12 @@ function Nav() {
         </div>
       </div>
       <div className="menuContainer">
-        <Link to="/main">
-          {" "}
-          {isOpen && <div className="menu3">Hike Selector</div>}
-        </Link>
+        <Link to="/main"> {isOpen && <div className="menu3">Random</div>}</Link>
         <Link to="/grind">
-          {isOpen && <div className="menu4">Grouse Grind Selector</div>}
+          {isOpen && <div className="menu4">Grouse Grind</div>}
+        </Link>
+        <Link to="/hikes">
+          {isOpen && <div className="menu4">All Hikes</div>}
         </Link>
       </div>
     </>
