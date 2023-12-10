@@ -60,7 +60,7 @@ function AllHikes() {
         )}
         <div className="hikesContainer__buttonContainer">
           <button
-            className="hikesContainer__easyButton"
+            className="hikesContainer__button"
             onClick={() =>
               setEasyIndex(easyIndex > 0 ? easyIndex - 1 : easyHikes.length - 1)
             }
@@ -68,7 +68,7 @@ function AllHikes() {
             Previous
           </button>
           <button
-            className="hikesContainer__easyButton"
+            className="hikesContainer__button"
             onClick={() => setEasyIndex((easyIndex + 1) % easyHikes.length)}
           >
             Next
@@ -85,26 +85,36 @@ function AllHikes() {
               src={`${process.env.REACT_APP_API_URL}/${mediumHikes[mediumIndex].imagePath}`}
               alt={mediumHikes[mediumIndex].name}
             />
-            <li>{mediumHikes[mediumIndex].name}</li>
-            <li>{mediumHikes[mediumIndex].city}</li>
-            <li>{mediumHikes[mediumIndex].distance}</li>
-            <li>{mediumHikes[mediumIndex].elevation}</li>
+            <div className="hikesContainer__hikeInfo">
+              <li className="hikesContainer__hikeInfoTitle">
+                {mediumHikes[mediumIndex].name}
+              </li>
+              <li>{mediumHikes[mediumIndex].city}</li>
+              <li>{mediumHikes[mediumIndex].distance}</li>
+              <li>{mediumHikes[mediumIndex].elevation}</li>
+            </div>
           </ul>
         )}
-        <button
-          onClick={() =>
-            setMediumIndex(
-              mediumIndex > 0 ? mediumIndex - 1 : mediumHikes.length - 1
-            )
-          }
-        >
-          Previous
-        </button>
-        <button
-          onClick={() => setMediumIndex((mediumIndex + 1) % mediumHikes.length)}
-        >
-          Next
-        </button>
+        <div className="hikesContainer__buttonContainer">
+          <button
+            className="hikesContainer__button"
+            onClick={() =>
+              setMediumIndex(
+                mediumIndex > 0 ? mediumIndex - 1 : mediumHikes.length - 1
+              )
+            }
+          >
+            Previous
+          </button>
+          <button
+            className="hikesContainer__button"
+            onClick={() =>
+              setMediumIndex((mediumIndex + 1) % mediumHikes.length)
+            }
+          >
+            Next
+          </button>
+        </div>
       </div>
       <div className="hikesContainer">
         <h2 className="hikesContainer__title">Hard Hikes</h2>
@@ -115,24 +125,32 @@ function AllHikes() {
               src={`${process.env.REACT_APP_API_URL}/${hardHikes[hardIndex].imagePath}`}
               alt={hardHikes[hardIndex].name}
             />
-            <li>{hardHikes[hardIndex].name}</li>
-            <li>{hardHikes[hardIndex].city}</li>
-            <li>{hardHikes[hardIndex].distance}</li>
-            <li>{hardHikes[hardIndex].elevation}</li>
+            <div className="hikesContainer__hikeInfo">
+              <li className="hikesContainer__hikeInfoTitle">
+                {hardHikes[hardIndex].name}
+              </li>
+              <li>{hardHikes[hardIndex].city}</li>
+              <li>{hardHikes[hardIndex].distance}</li>
+              <li>{hardHikes[hardIndex].elevation}</li>
+            </div>
           </ul>
         )}
-        <button
-          onClick={() =>
-            setHardIndex(hardIndex > 0 ? hardIndex - 1 : hardHikes.length - 1)
-          }
-        >
-          Previous
-        </button>
-        <button
-          onClick={() => setHardIndex((hardIndex + 1) % hardHikes.length)}
-        >
-          Next
-        </button>
+        <div className="hikesContainer__buttonContainer">
+          <button
+            className="hikesContainer__button"
+            onClick={() =>
+              setHardIndex(hardIndex > 0 ? hardIndex - 1 : hardHikes.length - 1)
+            }
+          >
+            Previous
+          </button>
+          <button
+            className="hikesContainer__button"
+            onClick={() => setHardIndex((hardIndex + 1) % hardHikes.length)}
+          >
+            Next
+          </button>
+        </div>
       </div>
     </>
   );

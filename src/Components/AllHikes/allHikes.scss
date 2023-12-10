@@ -6,7 +6,7 @@
   // align-items: center;
   flex-direction: column;
   background-color: $primary-color-wht;
-  height: 60vh;
+  height: 62vh;
 
   &__pageHeader {
     font-size: 1rem;
@@ -14,7 +14,8 @@
     background-color: $primary-color-wht;
   }
   &__title {
-    background-color: blue;
+    font-style: italic;
+    text-align: center;
   }
   &__detailsContainer {
     list-style-type: none;
@@ -39,7 +40,7 @@
     display: flex;
     justify-content: space-around;
   }
-  &__easyButton {
+  &__button {
     all: unset;
     background-color: $primary-color;
     box-shadow: 0.3rem 0.3rem $primary-color-blk, 0.3rem 0.3rem;
