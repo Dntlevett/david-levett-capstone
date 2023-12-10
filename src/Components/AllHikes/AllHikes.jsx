@@ -48,10 +48,14 @@ function AllHikes() {
               src={`${process.env.REACT_APP_API_URL}/${easyHikes[easyIndex].imagePath}`}
               alt={easyHikes[easyIndex].name}
             />
-            <li>{easyHikes[easyIndex].name}</li>
-            <li>{easyHikes[easyIndex].city}</li>
-            <li>{easyHikes[easyIndex].distance}</li>
-            <li>{easyHikes[easyIndex].elevation}</li>
+            <div className="hikesContainer__hikeInfo">
+              <li className="hikesContainer__hikeInfoTitle">
+                {easyHikes[easyIndex].name}
+              </li>
+              <li>{easyHikes[easyIndex].city}</li>
+              <li>{easyHikes[easyIndex].distance}</li>
+              <li>{easyHikes[easyIndex].elevation}</li>
+            </div>
           </ul>
         )}
         <div className="hikesContainer__buttonContainer">

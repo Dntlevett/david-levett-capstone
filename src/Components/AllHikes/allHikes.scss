@@ -18,11 +18,22 @@
   }
   &__detailsContainer {
     list-style-type: none;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
+
     // margin: 0;
     // display: flex;
     // justify-content: center;
     // align-items: center;
+  }
+  &__hikeInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__hikeInfoTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
   }
   &__buttonContainer {
     display: flex;
@@ -36,7 +47,6 @@
     color: $primary-color-blk;
     font-size: 0.8rem;
     font-weight: 600;
-    // margin-top: 1rem;
     border-radius: 3rem;
     width: 7rem;
     text-align: center;
@@ -56,6 +66,7 @@
 }
 .hikesImage {
   height: 11rem;
-  border-radius: 3rem;
+  border-radius: 6%;
   aspect-ratio: 3/2;
+  margin: auto 1rem;
 }
