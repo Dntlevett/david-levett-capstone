@@ -35,48 +35,56 @@ function AllHikes() {
 
   return (
     <>
-      <h1>Choose a hike based on difficulty</h1>
       <div className="hikesContainer">
-        <h2>Easy Hikes</h2>
+        <h1 className="hikesContainer__pageHeader">
+          Choose a hike based on difficulty
+        </h1>
+        <h2 className="hikesContainer__title">Easy Hikes</h2>
+        {/* <div className="hikesContainer__hikeDataContainer"> */}
         {easyHikes[easyIndex] && (
-          <ul>
-            <li>{easyHikes[easyIndex].name}</li>
-            <li>{easyHikes[easyIndex].city}</li>
-            <li>{easyHikes[easyIndex].distance}</li>
-            <li>{easyHikes[easyIndex].elevation}</li>
+          <ul className="hikesContainer__detailsContainer">
             <img
               className="hikesImage"
               src={`${process.env.REACT_APP_API_URL}/${easyHikes[easyIndex].imagePath}`}
               alt={easyHikes[easyIndex].name}
             />
+            <li>{easyHikes[easyIndex].name}</li>
+            <li>{easyHikes[easyIndex].city}</li>
+            <li>{easyHikes[easyIndex].distance}</li>
+            <li>{easyHikes[easyIndex].elevation}</li>
           </ul>
         )}
-        <button
-          onClick={() =>
-            setEasyIndex(easyIndex > 0 ? easyIndex - 1 : easyHikes.length - 1)
-          }
-        >
-          Previous
-        </button>
-        <button
-          onClick={() => setEasyIndex((easyIndex + 1) % easyHikes.length)}
-        >
-          Next
-        </button>
+        <div className="hikesContainer__buttonContainer">
+          <button
+            className="hikesContainer__easyButton"
+            onClick={() =>
+              setEasyIndex(easyIndex > 0 ? easyIndex - 1 : easyHikes.length - 1)
+            }
+          >
+            Previous
+          </button>
+          <button
+            className="hikesContainer__easyButton"
+            onClick={() => setEasyIndex((easyIndex + 1) % easyHikes.length)}
+          >
+            Next
+          </button>
+        </div>
+        {/* </div> */}
       </div>
       <div className="hikesContainer , hikesMedium">
-        <h2>Medium Hikes</h2>
+        <h2 className="hikesContainer__title">Medium Hikes</h2>
         {mediumHikes[mediumIndex] && (
-          <ul>
-            <li>{mediumHikes[mediumIndex].name}</li>
-            <li>{mediumHikes[mediumIndex].city}</li>
-            <li>{mediumHikes[mediumIndex].distance}</li>
-            <li>{mediumHikes[mediumIndex].elevation}</li>
+          <ul className="hikesContainer__detailsContainer">
             <img
               className="hikesImage"
               src={`${process.env.REACT_APP_API_URL}/${mediumHikes[mediumIndex].imagePath}`}
               alt={mediumHikes[mediumIndex].name}
             />
+            <li>{mediumHikes[mediumIndex].name}</li>
+            <li>{mediumHikes[mediumIndex].city}</li>
+            <li>{mediumHikes[mediumIndex].distance}</li>
+            <li>{mediumHikes[mediumIndex].elevation}</li>
           </ul>
         )}
         <button
@@ -95,18 +103,18 @@ function AllHikes() {
         </button>
       </div>
       <div className="hikesContainer">
-        <h2>Hard Hikes</h2>
+        <h2 className="hikesContainer__title">Hard Hikes</h2>
         {hardHikes[hardIndex] && (
-          <ul>
-            <li>{hardHikes[hardIndex].name}</li>
-            <li>{hardHikes[hardIndex].city}</li>
-            <li>{hardHikes[hardIndex].distance}</li>
-            <li>{hardHikes[hardIndex].elevation}</li>
+          <ul className="hikesContainer__detailsContainer">
             <img
               className="hikesImage"
               src={`${process.env.REACT_APP_API_URL}/${hardHikes[hardIndex].imagePath}`}
               alt={hardHikes[hardIndex].name}
             />
+            <li>{hardHikes[hardIndex].name}</li>
+            <li>{hardHikes[hardIndex].city}</li>
+            <li>{hardHikes[hardIndex].distance}</li>
+            <li>{hardHikes[hardIndex].elevation}</li>
           </ul>
         )}
         <button

@@ -1,18 +1,61 @@
 @use "../../styles/global" as *;
-.body {
-  background-color: $primary-color;
-}
+
 .hikesContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   flex-direction: column;
-  background-color: $primary-color;
+  background-color: $primary-color-wht;
+  height: 60vh;
+
+  &__pageHeader {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: $primary-color-wht;
+  }
+  &__title {
+    background-color: blue;
+  }
+  &__detailsContainer {
+    list-style-type: none;
+    padding: 1rem;
+    // margin: 0;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+  &__buttonContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__easyButton {
+    all: unset;
+    background-color: $primary-color;
+    box-shadow: 0.3rem 0.3rem $primary-color-blk, 0.3rem 0.3rem;
+    height: 4rem;
+    color: $primary-color-blk;
+    font-size: 0.8rem;
+    font-weight: 600;
+    // margin-top: 1rem;
+    border-radius: 3rem;
+    width: 7rem;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondary-color;
+      border: 1px solid $primary-color-blk;
+    }
+    &:active {
+      box-shadow: 0.1rem 0.1rem $primary-color-blk, 0.1rem 0.1rem;
+      transform: translate(0.24rem);
+    }
+  }
 }
 .hikesMedium {
   background-color: $primary-color-wht;
 }
 .hikesImage {
-  height: 13rem;
+  height: 11rem;
   border-radius: 3rem;
+  aspect-ratio: 3/2;
 }
