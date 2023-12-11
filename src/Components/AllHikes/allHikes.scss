@@ -7,11 +7,19 @@
   flex-direction: column;
   background-color: $primary-color-wht;
   height: 62vh;
+  width: 100%;
+  @include tablet {
+    height: 75vh;
+  }
 
   &__pageHeader {
     font-size: 1rem;
     padding: 1rem;
     background-color: $primary-color-wht;
+    @include tablet {
+      text-align: center;
+      font-size: 1.5rem;
+    }
   }
   &__title {
     font-style: italic;
@@ -22,9 +30,10 @@
     padding: 1rem 1rem 0 1rem;
 
     // margin: 0;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   &__hikeInfo {
     display: flex;
@@ -35,6 +44,10 @@
   &__hikeInfoTitle {
     font-size: 1.2rem;
     font-weight: 600;
+    @include tablet {
+      font-size: 1.5rem;
+      padding-top: 1rem;
+    }
   }
   &__buttonContainer {
     display: flex;
@@ -60,6 +73,10 @@
       box-shadow: 0.1rem 0.1rem $primary-color-blk, 0.1rem 0.1rem;
       transform: translate(0.24rem);
     }
+    @include tablet {
+      width: 18rem;
+      font-size: 1.3rem;
+    }
   }
 }
 .hikesMedium {
@@ -70,4 +87,7 @@
   border-radius: 6%;
   aspect-ratio: 3/2;
   margin: auto 1rem;
+  @include tablet {
+    height: 24rem;
+  }
 }
