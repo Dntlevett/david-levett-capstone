@@ -91,4 +91,7 @@
     width: 11rem;
     text-align: center;
   }
+  @include desktop {
+    width: 20rem;
+  }
 }
