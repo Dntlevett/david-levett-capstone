@@ -58,10 +58,14 @@ function GrouseGrind() {
   // const displayHike = async (event,newUser);
   useEffect(() => {
     const fetchHikes = async () => {
-      const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/hikes`
-      );
-      setHikes(response.data);
+      try {
+        const response = await axios.get(
+          `${process.env.REACT_APP_API_URL}/hikes`
+        );
+        setHikes(response.data);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
     };
     fetchHikes();
   }, []);
