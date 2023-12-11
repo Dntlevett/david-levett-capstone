@@ -69,9 +69,14 @@ function GrouseGrind() {
     };
     fetchHikes();
   }, []);
+
   const filteredHikes = hikes.filter(
     (hike) => hike.difficulty === buttonClicked
   );
+
+  const randomHikeDifficulty =
+    filteredHikes[Math.floor(Math.random() * filteredHikes.length)];
+
   return (
     <>
       <div className="grouseGrindFormContainer">
@@ -126,7 +131,7 @@ function GrouseGrind() {
           </div>
         </form>
       </div>
-      <div className="hikesByDifficulty">
+      {/* <div className="hikesByDifficulty">
         {filteredHikes.slice(0, 1).map((hike) => (
           <div className="hikesByDifficulty__hikeBox" key={hike.id}>
             <h2 className="hikesByDifficulty__hikeName">{hike.name}</h2>
@@ -138,6 +143,26 @@ function GrouseGrind() {
             />
           </div>
         ))}
+      </div> */}
+      <div className="hikesByDifficulty">
+        {randomHikeDifficulty ? (
+          <div
+            className="hikesByDifficulty__hikeBox"
+            key={randomHikeDifficulty.id}
+          >
+            <h2 className="hikesByDifficulty__hikeName">
+              {randomHikeDifficulty.name}
+            </h2>
+            <p className="hikesByDifficulty__description">
+              {randomHikeDifficulty.city}
+            </p>
+            <img
+              className="hikesByDifficulty__hikeImage"
+              src={`${process.env.REACT_APP_API_URL}/${randomHikeDifficulty.imagePath}`}
+              alt="test"
+            />
+          </div>
+        ) : null}
       </div>
     </>
   );
